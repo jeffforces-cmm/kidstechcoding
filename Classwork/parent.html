@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            border: 0;
+        }
+
+        .parent{
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: #000;
+          
+        }
+
+        .child{
+            position: absolute;
+            width:70%;
+            height: 300px;
+            /* background-color:#fff; */
+            top: 50%;
+            left: 50%;
+            color: #fff;
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        h2{
+            position: relative;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 50px
+        }
+
+        p{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        button{
+            position: relative;
+            width:150px ;
+            height: 45px;
+            background:#fff;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            color: #000;
+            display: block;
+            border-radius: 25px;
+
+
+        }
+
+
+        @media (min-width:0) and (max-width:600px){
+            .parent{
+                width: 100%;
+                height: 100vh;
+                padding: 0 10px;
+            }
+            .child{
+                
+                width: 100%;
+
+            }
+            h2{
+                font-size: 30px;
+                width: 90%;
+
+            }
+            p{
+                width: 90%;
+                font-size:18px;
+            }
+            button{
+                position: absolute;
+                left: 30%;
+                text-align: center;
+                margin: auto;
+
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+            <h2>Chibuzor Automobile Company</h2>
+            <p>we sell imported and exported cars which looks so affordable</p>
+            <button>Buy now</button>
+        </div>
+    </div>
+    
+     
+</body>
+</html>
