@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent Child</title>
+    <style>
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            .container{
+                position: relative;
+                width: 100%;
+                height: 100vh;
+                background-color: #000;
+                z-index: 1;
+            }
+            header{
+                position: absolute;
+                width: 100%;
+                height: 60px;
+                background-color: red;
+                z-index: 2;
+                display:flex;
+                justify-content: space-between;
+                padding: 10px 150px;
+                align-items:center;
+            }
+            header .logo{
+                position: relative;
+                height: 100%;
+                font-size: 25px;
+                color: #FFF;
+                text-transform: capitalize;
+                font-weight: bold;
+            }
+            header nav{
+                position: relative;
+                height: 100%;
+                font-size: 13px;
+                display: flex;
+                gap: 40px;
+                align-items: center; 
+            }
+            header nav a{
+                text-decoration: none;
+                color: #FFF;
+            }
+            
+            .write-up{
+                position:absolute;
+                width: 70%;
+                height: 300px;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                color: #FFF;
+                z-index: 2;
+            }
+            h2{
+            position: relative;
+            width: 100%;
+            height: auto;
+            text-align: center;
+            font-size: 50px;
+            text-transform: capitalize;
+            font-weight: bold;
+            margin-bottom: 10px;
+            
+        }
+        p{
+            position: relative;
+            width: 70%;
+            height: auto;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 20px;
+            text-transform: lowercase;
+            margin-bottom: 20px;
+        }
+        button{
+            position: relative;
+            width: 150px;
+            height: 45px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 15px;
+            display: block;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+            text-transform: capitalize;
+            border-radius: 25px;
+            background-color: #000;
+            
+        }
+        img{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            opacity: 0.7;
+            object-fit: cover;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="logo">porfolio</div>
+
+                <nav>
+                    <a href="#">home</a>
+                    <a href="#">about</a>
+                    <a href="#">services</a>
+                    <a href="#">contact</a>
+                </nav>
+            </header> 
+
+            <div class="write-up">
+                <h2>strong cars and bikes industry </h2>
+                <p>strong cars and bike industry works on making better cars for the better of our clients . 
+                    Lorem, ipsum dolor sit amet consectetur adipisicing </p>
+                <button>order now</button>
+                
+
+            </div>
+            
+            <img src="https://tse2.mm.bing.net/th/id/OIP.eTg11BlpuDOY5ZzWwTM_UgHaE7?pid=Api&P=0&h=220" width="850" height="400">
+        </div>
+    </body>
+    </html>
+    
