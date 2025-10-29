@@ -3,29 +3,333 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Box Text</title>
+    <title>Parent Child</title>
+    <!-- font awesome cdm -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        .box {
-            border:  solid black;
-            padding: 20px;
-            margin: 10px;
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                border: 0;
+            }
+            .container{
+                position: relative;
+                width: 100%;
+                height: 100vh;
+                background-color: #000;
+                z-index: 1;
+            }
+            header{
+                position: absolute;
+                width: 100%;
+                height: 70px;
+                background-color: red;
+                z-index: 2;
+                display:flex;
+                justify-content: space-between;
+                padding: 10px 150px;
+                align-items:center;
+            }
+            header .logo{
+                position: relative;
+                height: 100%;
+                font-size: 35px;
+                color: #FFF;
+                text-transform: capitalize;
+                font-weight: bold;
+            }
+            header nav{
+                position: relative;
+                height: 100%;
+                font-size: 20px;
+                display: flex;
+                gap: 40px;
+                align-items: center; 
+                
+            }
+            header nav a{
+                text-decoration: none;
+                color: #FFF;
+            }
+            
+            .write-up{
+                position:absolute;
+                width: 70%;
+                height: 300px;
+                top: 60%;
+                top: 70%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                color: #FFF;
+                z-index: 2;
+            }
+            .write-up  h2{
+            position: relative;
+            width: 100%;
+            height: auto;
             text-align: center;
-            width: 200px;
+            font-size: 50px;
+            text-transform: capitalize;
+            font-weight: bold;
+            margin-bottom: 10px;
+            
         }
+       .write-up p{
+            position: relative;
+            width: 70%;
+            height: auto;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 20px;
+            text-transform: lowercase;
+            margin-bottom: 20px;
+        }
+        button{
+            position: relative;
+            width: 150px;
+            height: 45px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 15px;
+            display: block;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+            text-transform: capitalize;
+            border-radius: 25px;
+            background-color: #000;
+            
+        }
+        .hero-img{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            opacity: 0.7;
+            object-fit: cover;
+        }
+/* ///////////////////////////////////////// */
+    /* general styling */
+        main{
+            position: relative;
+            width: 100%;
+            height: auto;
+            background-color: #f5f5f5;
+            padding: 50px 0;
+        }
+
+        section{
+            position: relative;
+            width: 100%;
+            height: auto;
+            padding: 50px 100px;
+
+        }
+
+        .flex-div{
+            position: relative;
+            width: 100%;
+            height: auto;
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .title{
+            position: relative;
+            width: 100%;
+            height: auto;
+            text-align: center;
+            font-size: 35px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        /* /////////////////////////////// */
+        .about{
+            position: relative;
+            width: 100%;
+            height: auto;
+            
+        }
+
+        .about .col:first-child{
+            position: relative;
+            width: 40%;
+            height: 400px;
+            background-color: #FFF;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+      
+        .about-img{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+        .about .col:nth-child(2){
+            position: relative;
+            width: 50%;
+            height:auto;
+        }
+        .about .col:nth-child(2) h2{
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+        /* ///////////////////////////////// */
+        .services{
+            position: relative;
+            width: 100%;
+            height: auto;
+            background-color: #222;
+         
+        } 
+         .services .title{
+            position: relative;
+            width: 100%;
+            height: auto;
+            color: #FFF;
+            font-size: 45px;
+            font-weight: bold;
+        }
+        .services .col{
+            position: relative;
+            width: 280px;
+            height: auto;
+            background-color: green;
+            border-radius: 10px;
+            padding:20px 20px ;
+            font-size: 15px;
+        }
+        
+         .services .flex-div .col i{
+            color: #fff;
+            text-align: center;
+            font-size: 20px;
+            display: flex;
+            /* justify-content: center; */
+            margin:auto;
+            padding-bottom: 10px;
+       
+         }
+         .services .flex-div .col h3{
+            position: relative;
+            width: 100%;
+            height: auto;
+            text-align: center;
+            display: flex;
+            font-size: 25px;
+            font-weight: bold;
+            color: #FFF;
+            margin-bottom:10px ;
+         }
+         .services .flex-div .col p{
+            position: relative;
+            width: 100%;
+            height: auto;
+            text-align: left;
+            color: #FFF;
+         }
+       
     </style>
-</head>
-<body>
-    <div class="box">
-        <h1>Chibuzor</h1>
-    </div>
-    <div class="box">
-        <h1>Box 2</h1>
-    </div>
-    <div class="box">
-        <h1>Box 3</h1>
-    </div>
-    <div class="box">
-        <h1>Box 4</h1>
-    </div>
-</body>
-</html>
+
+    </head>
+    <body>
+        <div class="container">
+           
+            <header>
+                <div class="logo">porfolio</div>
+
+                <nav>
+                    <a href="#">home</a>
+                    <a href="#">about</a>
+                    <a href="#">services</a>
+                    <a href="#">contact</a>
+                </nav>
+            </header> 
+
+         
+            <div class="write-up">
+                <h2>CHIBUZOR IGBOANUZUE </h2>
+                <p>Hi, I’m chibuzor Igboanuze— a web developer focused on creating clean, responsive, and engaging digital experiences.</p>
+                <button>Hire now</button>
+                
+                
+            </div>
+
+         
+
+
+            
+            <img class="hero-img" src="https://i.pinimg.com/736x/56/2a/5e/562a5e0741fee65e75b8910b5e728b30.jpg" width="850" height="400">
+        </div>
+
+        <main>
+
+            <!-- about section -->
+            <section class="about" id="about">
+                <h2 class="title">About me</h2>
+
+                <div class="flex-div">
+                    <div class="col">
+                        <img  class="about-img" src="https://thumbs.dreamstime.com/b/decoding-data-happy-young-african-american-software-developer-formalwear-sitting-workplace-front-computer-screen-143436473.jpg" alt="profile pic">
+                    </div>
+
+                    <div class="col">
+                        <h2>I am a <span>Web developer</span></h2>
+
+                        <p>Hi, I’m chibuzor
+                            My main tools include HTML, CSS, JavaScript, React, and Node.js, and I’m always learning new technologies to improve my skills. I love solving problems, building efficient solutions, and collaborating with others to bring projects to life.
+                            
+                            Outside of coding, I’m constantly exploring new design trends and working on personal projects to expand my creativity and technical knowledge.</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                </div>
+            </section>
+            <!-- ///////////////////////////////////// -->
+            <section class="services" id="service">
+                <h2 class="title">Services</h2>
+                
+                <div class="flex-div">
+                    <div class="col">
+                        <i class="fa fa-laptop" aria-hidden="true"></i>
+                        <h3>Web Developer</h3>
+                        <p>Experienced web developer with a strong portfolio of responsive and dynamic websites.Proficient in front-end and back-end technologies such as HTML,CSS,JavaScript,and various
+                             frameworks/libraries.Skilled in building custom web applications,optimizing site performance and ensuring cross-browser compatibility.Collaborative team player with a focus on
+                              delivering efficient,scalable and user-friendly solutions. Dedicated to continuous learning and staying abreast of emerging web technologies.</p>
+                    </div>
+
+                    <div class="col">
+                        <i class="fa fa-laptop" aria-hidden="true"></i>
+                        <h3>UI/UX Design</h3>
+                        <p>Specializing in creating intuitive and visually appealing digital experiences.Proficient in user research,wireframing,prototyping and interface design
+                            ,with a keen eye for detail and user-centric design principles.Skilled in collaborating with cross-functional teams to translate client requirements into 
+                            engaging user interfaces.Passionate about crafting seamless user journeys and enhancing overall user satisfaction.Committed to staying updated on industry 
+                            trends and technologies to deliver cutting-edge designs.</p>
+                    </div>
+
+                    <div class="col">
+                        <i class="fa fa-laptop" aria-hidden="true"></i>
+                        <h3>Freelancer</h3>
+                        <p>Experienced freelancer with a proven track record of delivering high-quality projects on time and within budget.Proficient at problem-solving
+                             and collaborating with clients to understand their needs and deliver tailored solutions.Strong communication skills and a dedication
+                             to exceeding client expectations.Seeking new opportunities to leverage expertise and contribute to impactful projects.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- ///////////////////////////////////// -->
+            <section class="skills" id="skills"></section>
+            <!-- ///////////////////////////////////// -->
+            <section class="contact" id="contact"></section>
+        </main>
+        <footer></footer>
+
+
+    </body>
+    </html>
+    
