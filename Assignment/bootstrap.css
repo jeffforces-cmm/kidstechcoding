@@ -50,7 +50,10 @@
     position: relative;
     display: flex;
     align-items: center;
-    gap: 15px;
+      gap: 15px;
+}
+a{
+    text-decoration: none;
 }
 /* //////////////////////////////////////////////////////// */
 .hero{
@@ -66,8 +69,35 @@
     width: 80%;
     height: auto;
     background-color: red;
-    top: 50%;
+    margin-top: 25%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 
+}
+.hero .write-up span{
+    position: relative;
+    width: 300px ;
+    height: auto;
+    border-radius: 20px;
+    font-size: 16px;
+    color: #333333;
+    background: rgb(253, 253, 74);
+    text-align: center;
+    padding: 7px 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.hero .write-up span a{
+    color:#333333;
+}
+
+.hero .write-up h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: #7a32ff;
+    text-align: center;
+    margin-bottom: 20px;
 }
