@@ -141,3 +141,22 @@ a{
     background-color: #7a32ff;
     color: #000;
 }
+@media( min-width: 0px) and (max-width: 600px){
+    .navbar{
+        display: none;
+    }
+    .hero{
+        width: 100%;
+        padding:10px ;
+        background-color: aqua;
+        height: 100vh;
+        top: 10%;
+    }
+    .write-up{
+        background-color: red;
+        width: 100%;
+    }
+    p{
+        text-align: left;
+    }
+}
