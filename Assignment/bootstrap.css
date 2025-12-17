@@ -124,7 +124,6 @@ a{
     position: relative;
     /* width:100%; */
     height: auto;
-    background-color:;
     display: flex;
     gap: 15px;
     justify-content: center;
@@ -141,22 +140,42 @@ a{
     background-color: #7a32ff;
     color: #000;
 }
-@media( min-width: 0px) and (max-width: 600px){
+
+
+@media (min-width:0px) and (max-width:600px){
+
     .navbar{
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
         display: none;
     }
     .hero{
         width: 100%;
-        padding:10px ;
-        background-color: aqua;
-        height: 100vh;
-        top: 10%;
-    }
-    .write-up{
-        background-color: red;
-        width: 100%;
-    }
-    p{
+        height: auto;
+    }   
+
+    .hero .write-up{
+        height: auto;
+        width: 90%;
         text-align: left;
+        margin-top: 30%;
+        left: 10%;
+    }
+    .hero .write-up h1{
+        font-size: 35px;
+    }
+    .hero .write-up p{
+        font-size:16px;
+        text-align: center;
+    }
+    .hero .write-up span{
+        width: 200px ;
+        font-size: 14px;
+    }
+    .hero .write-up img{
+       width:150px;
+       text-align: center;
     }
 }
