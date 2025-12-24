@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: "Poppins", sans-serif;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color:#eee;
+}
+.container .box{
+    position: absolute;
+    width: 80%;
+    height: auto;
+    background-color: red;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    
+}
+.container .box .left{
+    position: relative;
+    width: 50%;
+    height:auto ;
+    background-color: #000;
+}
+.container .box .left img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.container .box .left .write-up{
+    position:absolute;
+    width: 300px;
+    height:auto ;
+    /* background-color: aqua; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+}
+.container .box .left .write-up h2{
+    position: relative;
+    width: 100%;
+    height: auto;
+    font-size: 40px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    font-weight: bold;
+    line-height: 45px;
+}
+.container .box .left .write-up p{
+    position: relative;
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    /* background-color: aqua; */
+}
+.container .box .right{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    padding: 50px;
+}
+.container .box .right h2{
+    position: relative;
+    width: 100%;
+    height: auto;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.container .box .right form{
+    position: relative;
+    width: 300px;
+    height: auto;
+    /* background-color: blue; */
+}
+.container .box .right form label{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 500;
+}
+.container .box .right form input{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    font-weight: 15px;
+    outline: none;
+}
+.container .box .right form button{
+    position: relative;
+    width: 100%;
+    height: 45px;
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+@media (min-width:0px) and (max-width:600px){
+    .container {
+        padding: 10px;
+        height: 100vh;
+        width: 100%;
+    }
+    .container .box {
+        width: 70%;
+        height: auto;
+        flex-direction: column;
+    }
+    .container .box .left, .container .box .right {
+        width: 100%;
+    }
+      .container .box .left {
+        height: 120px;
+    }
+    .container .box .left img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .container .box .left .write-up {
+        position: absolute;
+        /* transform: none; */
+        text-align: center;
+        width: 100%;
+        margin-top: 10px;
+        padding: 20px;
+    }
+    .container .box .left .write-up h2 {
+        font-size: 23px;
+        width: 100%;
+        display: block;
+        line-height: 35px;
+    }
+
+      .container .box .left .write-up p {
+        font-size: 14px;
+    }
+
+    .container .box .right {
+        padding: 20px;
+    }
+    .container .box .right form {
+        width: 100%;
+        margin-left: 0;
+    }
+    .container .box .right h2 {
+        font-size: 25px;
+    }
+    .container .box .right form label {
+        font-size: 12px;
+    }
+
+    .container .box .right form input {
+        font-size: 12px;
+    }
+   .container .box .right form button {
+        font-size: 12px;
+    }
+}
