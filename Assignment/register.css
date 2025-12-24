@@ -117,15 +117,31 @@
     cursor: pointer;
 }
 
-
-@media (min-width:0px) and (max-width:600px){
+@media (min-width: 0px) and (max-width: 375px){
     .container {
         padding: 10px;
         height: 100vh;
         width: 100%;
     }
     .container .box {
+        width: 90%;
+    }
+
+    .container .box .right h2{
+        font-size: 28px;
+    }
+    .container .box .right form {
+        width: 250px;
+    }
+}
+@media (max-width:600px){
+    .container {
+        padding: 10px;
+        height: 100vh;
         width: 100%;
+    }
+    .container .box {
+        width: 70%;
         height: auto;
         flex-direction: column;
     }
