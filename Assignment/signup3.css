@@ -40,7 +40,7 @@ body {
 }
 
 /* Left Section */
-.left {
+.right{
   position: relative;
   width: 40%;
   height: auto;
@@ -52,7 +52,7 @@ body {
   justify-content: center;
 }
 
-.left h2 {
+.right h2 {
   position: relative;
   width: 70%;
   height: auto;
@@ -61,7 +61,7 @@ body {
   text-align: center;
 }
 
-.left p {
+.right p {
   position: relative;
   width: 100%;
   height: auto;
@@ -69,7 +69,7 @@ body {
   margin-bottom: 30px;
 }
 
-.left .sign-in {
+.right .sign-in {
   position: relative;
   width: 50%;
   height: 50px;
@@ -84,7 +84,7 @@ body {
 }
 
 /* Right Section */
- .container .box .right {
+ .container .box .left {
   position: relative;
   width: 60%;
   height: 100%;
@@ -102,7 +102,7 @@ body {
   border: 0;
 }
 
-.right h2 {
+.left h2 {
   position: relative;
   width: 100%;
   height: auto;
@@ -112,7 +112,7 @@ body {
   color: #00bfae;
 }
 
-.right p {
+.left p {
   position: relative;
   width: 100%;
   height: auto;
@@ -122,7 +122,7 @@ body {
   text-align: center;
 }
 
-.right .social-buttons {
+.left .social-buttons {
   position: relative;
   width: 100%;
   height: auto;
@@ -131,7 +131,7 @@ body {
   margin-bottom: 20px;
 }
 
-.right .social-btn {
+.left .social-btn {
   position: relative;
   width: 30%;
   height: 50px;
@@ -142,7 +142,7 @@ body {
   color: white;
 }
 
-.container .box .right form{
+.container .box .left form{
   position: relative;
   width: auto;
   height: auto;
@@ -150,7 +150,7 @@ body {
   margin-right:auto ;
   display: block;
 }
-.container .box .right form label{
+.container .box .left form label{
   position: relative;
   width: 100%;
   height: auto;
@@ -160,7 +160,7 @@ body {
   font-weight: 500;
   font-size:13px;
 }
-.container .box .right form input{
+.container .box .left form input{
   position: relative;
   width: 100%;
   height: auto;
