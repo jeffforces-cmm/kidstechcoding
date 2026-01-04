@@ -20,6 +20,8 @@
     top: 50%;
     transform: translate(-50%,-50%);
     display: flex;
+    border-radius: 20px;
+    overflow: hidden;
     
 }
 .container .box .left{
@@ -144,6 +146,7 @@
         width: 70%;
         height: auto;
         flex-direction: column;
+
     }
     .container .box .left, .container .box .right {
         width: 100%;
@@ -152,6 +155,7 @@
         height: 120px;
     }
     .container .box .left img {
+
         height: 100%;
         width: 100%;
         object-fit: cover;

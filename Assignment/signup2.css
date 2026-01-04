@@ -39,6 +39,16 @@ body {
   
 }
 
+ button{
+  position: relative;
+  width: 150px;
+  height: 45px;
+  border-radius:50px;
+  border: 0;
+  
+}
+
+
 /* Left Section */
 .left {
   position: relative;
@@ -54,7 +64,7 @@ body {
 
 .left h2 {
   position: relative;
-  width: 70%;
+  width: 100%;
   height: auto;
   margin-bottom: 20px;
   font-size: 32px;
@@ -66,22 +76,23 @@ body {
   width: 100%;
   height: auto;
   font-size: 16px;
+  text-align: center;
   margin-bottom: 30px;
 }
 
-.left .sign-in {
+.left .sign-in-btn {
   position: relative;
-  width: 50%;
-  height: 50px;
-  margin-top: 30px;
-  background-color: #ffffff;
-  color: #00bfae;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
+  background: transparent;
+  color: white;
+  border: 2px solid white;
   font-size: 16px;
-  text-align: center;
+  cursor: pointer;
+display: block;
+margin-left: auto;
+margin-right: auto;
+
 }
+
 
 /* Right Section */
  .container .box .right {
@@ -89,17 +100,7 @@ body {
   width: 60%;
   height: 100%;
   background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   padding: 20px;
-}
- button{
-  position: relative;
-  width: 150px;
-  height: 45px;
-  border-radius:50px;
-  border: 0;
 }
 
 .right h2 {
@@ -122,29 +123,9 @@ body {
   text-align: center;
 }
 
-.right .social-buttons {
-  position: relative;
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.right .social-btn {
-  position: relative;
-  width: 30%;
-  height: 50px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 14px;
-  color: white;
-}
-
 .container .box .right form{
   position: relative;
-  width: auto;
+  width: 320px;
   height: auto;
   margin-left:auto ;
   margin-right:auto ;
@@ -164,8 +145,31 @@ body {
   position: relative;
   width: 100%;
   height: auto;
-  padding: 8px 12px;
+  padding: 10px 12px;
+  background: #eee;
+  border: none;
   margin-bottom: 10px;
   outline: none;
   
+}
+
+.right  form .sign-up-btn {
+  position: relative;
+  width: 150px;
+  height: 45px;
+  background-color: #00bfae;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.social-icons{
+  background: red;
 }
