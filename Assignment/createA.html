@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.container{
+position: relative;
+  width: 100%;
+  height: 100vh;
+ 
+}
+.container .box{
+  position: relative;
+  width: 60%;
+  height:auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.container .box .left{
+  position: relative;
+  width: 50%;
+  height: auto;
+  /* background: #00bfae; */
+  /* color: white; */
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.container .box .left h2{
+  position: relative;
+  color:#333;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.container .box .left p{
+  position: relative;
+  color: #555;
+  font-size: 13px;
+  line-height: 24px;
+}
+.container .box .left .social-icons{
+  position: relative;
+  width: 300px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 35px;
+  padding: 10px 20px;
+  gap:10px;
+  /* background: red; */
+  border-radius: 25px;
+}
+
+.container .box .left  .first{
+    background: rgb(110, 110, 215);
+}
+
+.container .box .left  .second{
+    background: rgb(219, 68, 55);
+}
+.container .box .left  .third{
+    background: rgb(0, 119, 181);
+}
+.container .box .right{
+  position: relative;
+  width: 50%;
+  height: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.container .box .right img{
+  position: relative;
+  width: 320px;
+  height: auto;
+  margin-left:auto ;
+  margin-right:auto ;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="left">
+                <h2>Sign up</h2>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, dolorum provident. Nostrum, voluptatibus facilis accusamus volupta</p>
+
+                <div class="social-icons first">
+                    <i class="fab fa-facebook" aria-hidden="true"></i>
+                    
+                    <span>Sign up with facebook</span>
+                </div>
+
+                    <div class="social-icons second">
+                    <i class="fab fa-google-plus-g" aria-hidden="true"></i>
+                    
+                    <span>Sign up with Google</span>
+                </div>
+
+                    <div class="social-icons third">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    
+                    <span>Sign up with linkedin</span>
+                </div>
+            </div>
+
+
+            <div class="right">
+                <img src="https://i.pinimg.com/1200x/4f/05/0c/4f050c2130cbc0b9db39f7d9d896275c.jpg" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
