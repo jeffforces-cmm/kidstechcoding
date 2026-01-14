@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #111;
+}
+
+/* Main container */
+.container {
+    position: relative;
+  display: flex;
+  height: 100vh;
+}
+
+/* Left image side */
+.left {
+    position: relative;
+  width: 50%;
+  background-image: url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Right login side */
+.right {
+    position: relative;
+  width: 50%;
+  background: rgba(20, 40, 35, 0.9);
+  color: white;
+  padding: 60px;
+}
+
+/* Text */
+h1 {
+    position: relative;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+/* Inputs */
+label {
+    position: relative;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"] {
+    position: relative;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}
+
+/* Remember + forgot row */
+.row {
+    position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.row a {
+  position: relative;
+  color: #ccc;
+  text-decoration: none;
+}
+
+/* Button */
+button {
+    position: relative;
+  width: 100%;
+  padding: 12px;
+  margin-top: 30px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+    position: relative;
+  background: #222;
+}
+
+/* Register text */
+.register {
+    position: relative;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.register a {
+    position: relative;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
