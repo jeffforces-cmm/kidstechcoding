@@ -11,31 +11,36 @@
 body{
   position: relative;
   width: 100%;
-  height: auto;
+  height: ;
 }
 
 /* HEADER */
 header{
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
   height: 70px;
-  background-color: black;
+  background-color:#eee;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 150px;
 }
 
 /* LOGO */
 header .logo{
-  position: absolute;
-  left: 20px;
+  position: relative;
+  /* left: 20px; */
   top: 10px;
-  width: 120px;
+  object-fit:contain;
+  width: 150px;
   height: 50px;
+  padding-bottom: 10px;
 }
 
 /* LOGIN BUTTON */
 header button{
-  position: absolute;
+  position: relative;
   right: 20px;
   top: 15px;
   width: 80px;
@@ -68,8 +73,9 @@ header button{
     height: auto;
     top:50%;
     left:50%;
+    color: #fff;
     transform: translateX(-50%) translateY(-50%);
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 }
 
 /* WRITE UP TITLE */
@@ -78,6 +84,9 @@ header button{
   width: 100%;
   height: auto;
   margin-bottom: 15px;
+  font-size: 50px;
+  text-align: center;
+  text-transform: capitalize;
 }
 
 /* WRITE UP TEXT */
@@ -86,6 +95,7 @@ header button{
   width: 70%;
   height: auto;
   margin: auto;
+  text-align: center;
 }
 
 
@@ -136,4 +146,71 @@ footer{
   width: 100%;
   height: 50px;
   background-color: black;
+}
+
+footer p{
+  position: relative;
+  color: white;
+  text-align: center;
+  top: 15px;
+}
+
+@media (min-width:0px) and (max-width:600px) {
+  header{
+    padding: 0px 90px;
+  }
+    header .logo{
+      width: 100px;
+      height: 40px;
+    }
+    header button{
+      width: 70px;
+      height: 30px;
+      font-size: 12px;
+    }
+    .hero{
+      height: 40vh;
+    }
+    .hero .write-up{
+      width: 70%;
+      padding: 0px;
+    }
+  .hero .write-up h1{
+    font-size: 45px;
+  }
+  .hero .write-up p{
+    width: 90%;
+    font-size: 14px;
+  }
+  .our-services{
+    padding: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .box{
+    width: 30%;
+    height: auto;
+  }
+}
+
+@media (max-width:400px){
+  .hero .write-up{
+    width: 80%;
+    padding: 20px;
+  }
+  .hero .write-up h1{
+    font-size: 30px;
+  }
+  .hero .write-up p{
+    font-size: 14px;
+  }
+  .our-services{
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  }
+  .box{
+    width: 80%;
+  }
 }
