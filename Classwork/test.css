@@ -2,9 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  position: relative;
-  width: auto;
-  height: auto;
 }
 
 /* BODY */
@@ -12,30 +9,35 @@ body{
   position: relative;
   width: 100%;
   height: auto;
+  overflow-x: hidden;
 }
 
 /* HEADER */
 header{
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
   height: 70px;
-  background-color: black;
+  background-color: #eee;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* LOGO */
 header .logo{
-  position: absolute;
+  position: relative;
   left: 20px;
   top: 10px;
-  width: 120px;
+  width: 150px;
   height: 50px;
+  padding-bottom: 10px;
+  flex-shrink: 0;
 }
 
 /* LOGIN BUTTON */
 header button{
-  position: absolute;
+  position: relative;
   right: 20px;
   top: 15px;
   width: 80px;
@@ -43,6 +45,8 @@ header button{
   background-color: orange;
   color: white;
   border: none;
+  border-radius: 5px;
+  flex-shrink: 0;
 }
 
 /* WRITE UP / HERO */
@@ -69,7 +73,7 @@ header button{
     top:50%;
     left:50%;
     transform: translateX(-50%) translateY(-50%);
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 }
 
 /* WRITE UP TITLE */
@@ -78,6 +82,8 @@ header button{
   width: 100%;
   height: auto;
   margin-bottom: 15px;
+     text-align: center;
+     color: white;
 }
 
 /* WRITE UP TEXT */
@@ -86,6 +92,7 @@ header button{
   width: 70%;
   height: auto;
   margin: auto;
+  color: white;
 }
 
 
@@ -132,8 +139,94 @@ header button{
 
 /* FOOTER */
 footer{
-  position: relative;
+  position: fixed;
   width: 100%;
   height: 50px;
   background-color: black;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+}
+footer p{
+  position: relative;
+   color: white;
+  font-size:20px;
+    text-align: center;
+    padding-top: 10px;
+}
+@media (min-width:0px) and (max-width:600px){
+  body{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+  }
+  header{
+    height: 60px;
+    width: 100%;
+    padding: 0 10px;
+    overflow: hidden;
+  }
+  header .logo{
+    width: 120px;
+    height: 40px;
+    top: 0;
+    left: 0;
+    position: relative;
+    margin-right: auto;
+  }
+  header button{
+    width: 70px;
+    height: 30px;
+    top: 0;
+    right: 0;
+    position: relative;
+  }
+  .hero{
+    height: 40vh;
+    width: 100%;
+  }
+  .hero img{
+    height: 100%;
+    width: 100%;
+  }
+  .hero .write-up{
+    width: 90%;
+  }
+  .write-up h1{
+    font-size: 24px;
+  }
+  .write-up p{
+    width: 100%;
+    font-size: 14px;
+  }
+  .our-services{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+  }
+  .box{
+    width: 150px;
+    height: 180px;
+    margin: 10px auto;
+  }
+  .box img{
+    height: 120px;
+  }
+  .box p{
+    font-size: 14px;
+  }
+  footer{
+    height: 40px;
+    width: 100%;
+    overflow: hidden;
+  }
+  footer p{
+    font-size: 16px;
+    padding-top: 8px;
+  }
 }
