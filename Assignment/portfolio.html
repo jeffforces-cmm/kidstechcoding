@@ -33,9 +33,10 @@
 
          
             <div class="write-up">
+				
                 <h2>CHIBUZOR IGBOANUZUE </h2>
-                <p>Hi, I’m chibuzor Igboanuze— a web developer focused on creating clean, responsive, and engaging digital experiences.</p>
-                <button>Hire now</button>
+                <p id="message">Hi, I’m chibuzor Igboanuze— a web developer focused on creating clean, responsive, and engaging digital experiences.</p>
+                <button class="one" onclick="changeText()">Hire now</button>
                 
                 
             </div>
@@ -292,7 +293,15 @@
 
        </script>
 
-
+<script src="script.js"></script>
+ <script>
+	function changeText(){
+		let text =document.getElementById("message")
+		text.innerHTML="thank you for hiring";
+		text.style.color="red";
+	}
+	
+ </script>
     </body>
     </html>
     
