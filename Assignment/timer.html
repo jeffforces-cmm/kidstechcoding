@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .timer{
+        position: absolute;
+        width:50%;
+        height:auto;
+        background-color: brown;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;  
+    }
+    .timer h2{
+        position: relative;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .timer button{
+        position: relative;
+        width: 100px;
+        height: auto;
+
+    }
+</style>
+<body>
+    <div class="timer">
+        <h2>my javescript Timer</h2>
+        <h2 id ="timer"> 0 </h2>
+        <button id="start">start</button>
+        <button id="stop">stop</button>
+        <button id="reset">reset</button>
+    </div>
+  <script>
+    let counter = 0
+    let interval = null
+    let timerDisplay = document.getElementById("timer")
+
+    let start8tn = document.getElementById("start")
+    let stop8tn = document.getElementById("stop")
+    let reset8tn = document.getElementById("reset")
+
+    // this funtion runs every second to update the time display
+    function updateTimer() {
+        counter++
+        timerDisplay.innerHTML=counter;
+    }
+    //stop button
+    start8tn.addEventListener("click", function(){
+    if (interval !== null){// only stop if timer is currently running 
+        clearInterval(interval);// stop the timer 
+        interval = null; //reset the interval variable to indicate the is stopped
+    }
+});
+//reset button
+reset8tn.addEventListener("click", function(){
+    clearInterval(interval
+    interval = null;//reset the interval variable
+    counter = 0;//reset the counter to 0 
+    timerDisplay.innerHTML = counter;// update the timer display to show 0
+    ))};
+
+  </script>
+</body>
+
+</html>
